@@ -1,42 +1,9 @@
-@font-face {
-  font-family: 'TT Lakes';
-  src: url('../fonts/TTLakes-Regular.eot');
-  src: local('TT Lakes Regular'), local('TTLakes-Regular'),
-      url('../fonts/TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
-      url('../fonts/TTLakes-Regular.woff') format('woff'),
-      url('../fonts/TTLakes-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'TT Lakes';
-  src: url('../fonts/TTLakes-Medium.eot');
-  src: local('TT Lakes Medium'), local('TTLakes-Medium'),
-      url('../fonts/TTLakes-Medium.eot?#iefix') format('embedded-opentype'),
-      url('../fonts/TTLakes-Medium.woff') format('woff'),
-      url('../fonts/TTLakes-Medium.ttf') format('truetype');
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'TT Lakes';
-  src: url('../fonts/TTLakes-Bold.eot');
-  src: local('TT Lakes Bold'), local('TTLakes-Bold'),
-      url('../fonts/TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
-      url('../fonts/TTLakes-Bold.woff') format('woff'),
-      url('../fonts/TTLakes-Bold.ttf') format('truetype');
-  font-weight: bold;
-  font-style: normal;
-}
 
 
 body {
   display: block;
   margin: 0;
 }
-
 
 .menu {
   box-sizing: border-box;
@@ -71,7 +38,6 @@ body {
 
 .button {
   box-sizing: border-box;
-
   border: none;
   padding: 0;
   margin: 0;
@@ -81,8 +47,7 @@ body {
   border: 0;
   border-radius: 0;
   background: transparent;
-  flex-shrink: 0;
-  
+  flex-shrink: 0;  
   cursor: pointer;
 }
 
@@ -135,7 +100,6 @@ body {
 
 .services__btn-text {
   box-sizing: border-box;
-
   position: absolute;
   clip: rect(0 0 0 0);
   width: 1px;
@@ -160,7 +124,6 @@ body {
   padding-right: 32px;
   padding-top: 24px;
   margin-bottom: 24px;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -257,6 +220,7 @@ body {
 .services__text{
   box-sizing: border-box;
   font-family: 'TT Lakes';
+  font-weight: 500;
   font-size: 14px;
   line-height: 18px;
   letter-spacing: 0.2px;
@@ -496,7 +460,6 @@ body {
     width: auto;
     height: auto;
     margin: 0;
-
     font-family: 'TT Lakes';
     font-weight: 500;
     font-size: 16px;
@@ -505,8 +468,7 @@ body {
     color: #1B1C21;
     margin: auto 0;
     cursor: pointer;
-    white-space: nowrap;
-    
+    white-space: nowrap;    
     margin-right: 9px;
   }
 
