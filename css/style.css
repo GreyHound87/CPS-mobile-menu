@@ -49,6 +49,11 @@ body {
   background: transparent;
   flex-shrink: 0;  
   cursor: pointer;
+  transition: filter 0.2s ease;
+}
+
+.button:hover {
+  filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.5)) saturate(1.8);
 }
 
 .menu__button, .services__button {
@@ -267,6 +272,55 @@ body {
 
 .menu__wrapper--for--lang {
   display: none;
+}
+
+.menu__button--name--burger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+
+}
+
+.button__line:nth-child(1) {
+  width: 18px;
+  height: 2px;
+  border-radius: 1px;
+  background-color: #FFFFFF;
+  margin: auto auto 5px auto;
+  transition: transform 0.3s ease;
+}
+
+.button__line:nth-child(2) {
+  width: 10px;
+  height: 2px;
+  border-radius: 1px;
+  background-color: #FFFFFF;
+  margin: 0 19px 5px 11px;
+  transition: transform 0.3s ease;
+}
+
+.button__line:nth-child(3) {
+  width: 14px;
+  height: 2px;
+  border-radius: 1px;
+  background-color: #FFFFFF;
+  margin: 0 15px auto 11px;
+  transition: transform 0.3s ease;
+}
+.menu__button--name--burger.active .button__line:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+  width: 24px;
+}
+
+.menu__button--name--burger.active .button__line:nth-child(2) {
+  opacity: 0;
+}
+
+.menu__button--name--burger.active .button__line:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -4px);
+  width: 24px;
 }
 
 @media (min-width: 768px) {

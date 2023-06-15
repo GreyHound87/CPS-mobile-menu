@@ -102,20 +102,20 @@ main {
 
 .menu__navigation {
   display: flex;
-    flex-direction: column;
-    padding-left: 24px;
+  flex-direction: column;
+  padding-left: 24px;
 }
 
 .menu__wrapper--for--mod-btn {
   box-sizing: border-box;
   align-items: center;
   width: 373px;
-    margin-right: 0;
-    padding-right: 0;
-    display: flex;
-    justify-content: flex-start;
-    padding-left: 23px;
-    margin-bottom: 16px;
+  margin-right: 0;
+  padding-right: 0;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 23px;
+  margin-bottom: 16px;
 }
 
 .link-btn {
@@ -148,25 +148,25 @@ main {
 
 .menu__callto {
   box-sizing: border-box;
-    display: flex;
-    justify-content: flex-start;  
-    align-items: center;
-    outline: none;
-    text-decoration: none;
-    white-space: nowrap;  
-    font-family: 'TT Lakes';
-    font-size: 24px;
-    line-height: 32px;
-    letter-spacing: -0.6px;
-    color: #1B1C21;
-    padding-left: 23px;
-    margin-bottom: 39px;
-    font-weight: bold;
+  display: flex;
+  justify-content: flex-start;  
+  align-items: center;
+  outline: none;
+  text-decoration: none;
+  white-space: nowrap;  
+  font-family: 'TT Lakes';
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.6px;
+  color: #1B1C21;
+  padding-left: 23px;
+  margin-bottom: 39px;
+  font-weight: bold;
 }
 
 .menu__wrapper--for--lang {
   padding-left: 24px;
-    display: flex;
+  display: flex;
 }
 
 .menu__button--name--call, .menu__button--name--chat {
