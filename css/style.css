@@ -180,8 +180,7 @@ body {
   box-sizing: border-box;
   display: flex;
   justify-content: center;  
-  align-items: center;
-  
+  align-items: center;  
 }
 
 .link-btn {
@@ -200,13 +199,19 @@ body {
   font-size: 16px;
   line-height: 24px;
   color: #7E7E82;
-  padding: 0 15px;
+  padding: 0 16px;
+  transition: box-shadow 0.3s ease;
 }
 
-.services__link-btn:hover, .services__link-btn:active, .services__link-btn:focus {
+.services__link-btn.current {
   background: #FFFFFF;
-  border: 2px solid #B8FFEC;
   border-radius: 6px;
+  box-shadow: inset 0 0 2px 0 rgba(184, 255, 236, 0), inset 0 0 0 2px rgba(184, 255, 236, 1);
+}
+
+.services__link-btn:hover, .services__link-btn:focus {
+  border-radius: 6px;
+  box-shadow: inset 0 0 2px 0 rgba(184, 255, 236, 0), inset 0 0 0 2px rgba(184, 255, 236, 1);
 }
 
 .content{
@@ -214,8 +219,7 @@ body {
 }
 
 .services__article {
-  padding: 24px 16px 16px 16px;
-  
+  padding: 24px 16px 16px 16px;  
 }
 
 .article{
@@ -228,7 +232,7 @@ body {
   font-weight: 500;
   font-size: 14px;
   line-height: 18px;
-  letter-spacing: 0.2px;
+  letter-spacing: 0.1px;
   color: #1B1C21;
   margin: 0;
 }
@@ -245,7 +249,7 @@ body {
   display: flex;
   justify-content: space-between;  
   align-items: center;
-  width: 132px;
+  width: 141px;
   height: 24px;
   padding: 0;
   font-family: 'TT Lakes';
@@ -256,6 +260,13 @@ body {
   background-color: transparent;
   cursor: pointer;
   font-weight: 500;
+  padding-right: 9px;
+  transition: box-shadow 0.3s ease;
+}
+
+.more-btn:hover, .more-btn:focus {
+  border-radius: 6px;
+  box-shadow: 0 0 2px 0 rgba(184, 255, 236, 0), 0 0 0 2px rgba(184, 255, 236, 1);
 }
 
 .services__text {
@@ -280,7 +291,6 @@ body {
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
-
 }
 
 .button__line:nth-child(1) {
@@ -324,7 +334,6 @@ body {
 }
 
 @media (min-width: 768px) {
-
   .menu__wrapper--for--logo {
     width: 226px;
     justify-content: space-around;
@@ -480,6 +489,10 @@ body {
     border-radius: 4px; 
   }
 
+  .services__link-btn {
+    padding: 0 14px 0 24px;
+  }
+
   .menu__wrapper--for--mod-btn {
     width: 373px;
     margin-right: 0;
@@ -497,7 +510,6 @@ body {
   .upender__exception {
     max-width: 1120px;
   }
-
 
   .services__wrapper--for--btns {
     position: static;
@@ -538,7 +550,7 @@ body {
   }
 
   .services__navigation {
-    padding-left: 42px;
+    padding-left: 35px;
     max-height: 40px;
     overflow: visible;
   }
@@ -587,7 +599,14 @@ body {
    .menu__navigation {
     display: flex;
     flex-direction: column;
-    padding-left: 24px;
+  }
+
+  .navigation__list {
+    display: flex;
+    height: 397px;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-bottom: 216px;
   }
 
   .navigation__item {
@@ -595,6 +614,8 @@ body {
     display: flex;
     justify-content: flex-start;  
     align-items: flex-start;
+    position: relative;
+    height: 100%;
   }
 
   .navigation__link-btn {
@@ -603,30 +624,33 @@ body {
     line-height: 24px;
     letter-spacing: -0.2px;
     color: #1B1C21;
-    font-weight: 500;
-  }
+    font-weight: 500;    
+    margin-left: 20px;
+  }  
 
-  .navigation__list {
-    display: flex;
-    height: 372px;
-    justify-content: space-between;
-    flex-direction: column;
-    margin-bottom: 240px;
-  }
-
-  .navigation__link-btn:hover:before, .navigation__link-btn:active:before, .navigation__link-btn:focus:before {
+  .navigation__link-btn:before {
     position: relative;
     box-sizing: border-box;
     content: '';
-    left: -23px;
+    left: -18px;
     width: 4px;
     height: 28px;
     border-right: 4px solid #41F6D7;
-    border-radius: 4px;     
+    border-radius: 4px;  
+    opacity: 0;   
+    transition: opacity 0.3s ease;
   }
 
-  .navigation__link-btn:hover, .navigation__link-btn:active, .navigation__link-btn:focus {
-    color: #7E7E82; 
+  .navigation__link-btn:hover:before, .navigation__link-btn:focus:before {
+    opacity: 1;
+  }
+
+  .navigation__link-btn.current {
+    color: #7E7E82;
+  }
+
+  .navigation__link-btn.current:before {
+    opacity: 1;
   }
 
   .menu__mailto {
