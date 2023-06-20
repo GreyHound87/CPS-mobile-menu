@@ -11,75 +11,76 @@
 </head>
 <body>
     <div class="upender">
-        <header class="menu">
-            <div class="wrapper menu__wrapper menu__wrapper--for--logo">
+        <header id="menu" class="menu">
+            <div id="menuLogoWrapper" class="wrapper menu__wrapper menu__wrapper--for--logo">
                 <button id="burgerButton" class="button menu__button menu__button--name--burger">
                     <span class="button__line"></span>
                     <span class="button__line"></span>
                     <span class="button__line"></span>
                 </button>
-                <a href="#" class="logo menu__logo">
-                    <img class="logo__img" src="/icons/logo.svg" alt="Логотип компании Си-Пи-Эс">
+                <a href="#" id="logoLink" class="logo menu__logo">
+                    <img id="logoImg" class="logo__img" src="/icons/logo.svg" alt="Логотип компании Си-Пи-Эс">
                 </a>
-                <button class="button menu__button menu__button--name--search">
+                <button id="searchButton" class="button menu__button menu__button--name--search">
                     <img class="button__img" src="/icons/search.svg" alt="Поиск">
                 </button>
             </div>
-            <nav class="navigation menu__navigation">
-                <ul class="list navigation__list">
-                    <li class="navigation__item">
-                        <a href="#" class="link-btn navigation__link-btn">Ремонт техники</a>
+            <nav id="navigation" class="navigation menu__navigation">
+                <ul id="navigationList" class="list navigation__list">
+                    <li id="navItem1" class="navigation__item">
+                        <a href="#" id="navLink1" class="link-btn navigation__link-btn">Ремонт техники</a>
                     </li>
-                    <li class="navigation__item">
-                        <a href="#" class="link-btn navigation__link-btn current">Услуги и сервисы</a>
+                    <li id="navItem2" class="navigation__item">
+                        <a href="#" id="navLink2" class="link-btn navigation__link-btn navigation__link-btn--current">Услуги и сервисы</a>
                     </li>
-                    <li class="navigation__item">
-                        <a href="#" class="link-btn navigation__link-btn">Корпоративным клиентам</a>
+                    <li id="navItem3" class="navigation__item">
+                        <a href="#" id="navLink3" class="link-btn navigation__link-btn">Корпоративным клиентам</a>
                     </li>
-                    <li class="navigation__item">
-                        <a href="#" class="link-btn navigation__link-btn">Продавцам техники</a>
+                    <li id="navItem4" class="navigation__item">
+                        <a href="#" id="navLink4" class="link-btn navigation__link-btn">Продавцам техники</a>
                     </li>
-                    <li class="navigation__item">
-                        <a href="#" class="link-btn navigation__link-btn">Партнерам</a>
+                    <li id="navItem5" class="navigation__item">
+                        <a href="#" id="navLink5" class="link-btn navigation__link-btn">Партнерам</a>
                     </li>
-                    <li class="navigation__item">
-                        <a href="#" class="link-btn navigation__link-btn">Производителям</a>
+                    <li id="navItem6" class="navigation__item">
+                        <a href="#" id="navLink6" class="link-btn navigation__link-btn">Производителям</a>
                     </li>
-                    <li class="navigation__item">
-                        <a href="#" class="link-btn navigation__link-btn">Наши сервисные центры</a>
+                    <li id="navItem7" class="navigation__item">
+                        <a href="#" id="navLink7" class="link-btn navigation__link-btn">Наши сервисные центры</a>
                     </li>
-                    <li class="navigation__item">
-                        <a href="#" class="link-btn navigation__link-btn">Контакты</a>
+                    <li id="navItem8" class="navigation__item">
+                        <a href="#" id="navLink8" class="link-btn navigation__link-btn">Контакты</a>
                     </li>
                 </ul>
             </nav>
-            <div class="wrapper menu__wrapper menu__wrapper--for--mod-btn">
-                <button class="button menu__button menu__button--name--call">
+            <div id="modBtnWrapper" class="wrapper menu__wrapper menu__wrapper--for--mod-btn">
+                <button id="callButton" class="button menu__button menu__button--name--call">
                     <img class="button__img" src="/icons/call.svg" alt="Звонок">
                 </button>
-                <button class="button menu__button menu__button--name--chat">
+                <button id="chatButton" class="button menu__button menu__button--name--chat">
                     <img class="button__img" src="/icons/message.svg" alt="Чат">
                 </button>
-                <button class="button menu__button menu__button--name--profile">
+                <button id="profileButton" class="button menu__button menu__button--name--profile">
                     <img class="button__img" src="/icons/profile.svg" alt="Профиль">
                 </button>
             </div>
-            <a class="menu__mailto" href="mailto:mail@cps.com">mail@cps.com</a>
-            <a class="menu__callto" href="tel:88008908900">8 800 890 8900</a>
-            <div class="wrapper menu__wrapper--for--lang">
-                <a href="#" class="link-btn menu__link-btn menu__link-btn--lang--ru">RU</a>
-                <a href="#" class="link-btn menu__link-btn menu__link-btn--lang--en">EN</a>
-                <a href="#" class="link-btn menu__link-btn menu__link-btn--lang--ch">CH</a>
+            <a id="mailtoLink" class="menu__mailto" href="mailto:mail@cps.com">mail@cps.com</a>
+            <a id="calltoLink" class="menu__callto" href="tel:88008908900">8 800 890 8900</a>
+            <div id="langWrapper" class="wrapper menu__wrapper--for--lang">
+                <a id="langLinkRU" href="#" class="link-btn menu__link-btn menu__link-btn--current">RU</a>
+                <a id="langLinkEN" href="#" class="link-btn menu__link-btn">EN</a>
+                <a id="langLinkCH" href="#" class="link-btn menu__link-btn">CH</a>
             </div>
         </header>
-        <div class="upender__exception">
+        <div id="upenderException" class="upender__exception">
+            <div id="placeholder" class="placeholder"></div>
             <main>
                 <section class="services">
                     <div class="wrapper services__wrapper services__wrapper--for--first-line">
                         <h1 class="title services__title">
                             Услуги и сервисы
                         </h1>
-                        <div class="wrapper services__wrapper services__wrapper--for--btns">
+                        <div id="servicesBtnWrapper" class="wrapper services__wrapper services__wrapper--for--btns">
                             <label class="btn-text services__btn-text" for="submit">Оставить заявку</label>
                             <button id="submit" class="button services__button services__button--name--submit">
                                 <img class="button__img" src="/icons/service.svg" alt="Оставить заявку">
@@ -93,7 +94,7 @@
                     <nav class="navigation services__navigation">
                         <ul class="list services__list">
                             <li class="services__item">
-                                <a href="#" class="link-btn services__link-btn current">Ремонтируемые устройства</a>
+                                <a href="#" class="link-btn services__link-btn services__link-btn--current">Ремонтируемые устройства</a>
                             </li>
                             <li class="services__item">
                                 <a href="#" class="link-btn services__link-btn">Ремонтируемые бренды</a>
@@ -132,6 +133,7 @@
                 </section>
             </main>
         </div>
+        <div id="upenderBlurOverlay" class="blur-overlay upender__blur-overlay"></div>
     </div>
 <script src="/scripts/script.js"></script>
 </body>
