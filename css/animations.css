@@ -1,0 +1,47 @@
+@keyframes loop-loop {
+  20% {
+    transform: rotate(-30deg) translate(-5px, 5px) scale(1.2);
+  }
+  40% {
+    transform: rotate(0) scale(0.8);
+  }
+  60% {
+    transform: rotate(30deg) translate(5px, -5px) scale(1.2);
+  }
+  80% {
+    transform: rotate(0) scale(0.8);
+  }
+}
+
+@keyframes ding-dong {
+  33% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(0);
+  }
+  66% {
+    transform: rotate(10deg);
+  }
+}
+
+@keyframes message {
+  0% {
+    transform: scale(0.3) translate(-10px, 10px);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes look-around {
+  33% {
+    transform: skewX(15deg) translate(-3px);
+  }
+  50% {
+    transform: skewX(0);
+  }
+  66% {
+    transform: skewX(-15deg) translate(3px);
+  }
+}

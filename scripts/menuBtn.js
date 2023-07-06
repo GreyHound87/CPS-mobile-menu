@@ -2,6 +2,9 @@ function toggleBurgerButton() {
   var menu = document.getElementById("menu");
   var menuLogoWrapper = document.getElementById("menuLogoWrapper");
   var burgerButton = document.getElementById("burgerButton");
+  var burgerLine1 = document.getElementById("burgerLine1");
+  var burgerLine2 = document.getElementById("burgerLine2");
+  var burgerLine3 = document.getElementById("burgerLine3");
   var logoLink = document.getElementById("logoLink");
   var logoImg = document.getElementById("logoImg");
   var searchButton = document.getElementById("searchButton");
@@ -30,21 +33,25 @@ function toggleBurgerButton() {
   var mailtoLink = document.getElementById("mailtoLink");
   var calltoLink = document.getElementById("calltoLink");
   var langWrapper = document.getElementById("langWrapper");
-  var langLinkRU = document.getElementById("langLinkRU");
-  var langLinkEN = document.getElementById("langLinkEN");
-  var langLinkCH = document.getElementById("langLinkCH");
-  var servicesFirstLineWrapper = document.getElementById("servicesBtnWrapper");
+  var langLink1 = document.getElementById("langLink1");
+  var langLink2 = document.getElementById("langLink2");
+  var langLink3 = document.getElementById("langLink3");
+  var servicesBtnWrapper = document.getElementById("servicesBtnWrapper");
   var upenderException = document.getElementById("upenderException");
   var placeholder = document.getElementById("placeholder");
   var upenderBlurOverlay = document.getElementById("upenderBlurOverlay");
-  var isButtonActive = burgerButton.classList.contains("menu__button--active");
+  
+  var isButtonActive = burgerButton.classList.contains("menu__burger-btn--active");
 
   if (isButtonActive) {
-    burgerButton.classList.remove("menu__button--active");
-    menuLogoWrapper.classList.remove("menu__wrapper--active");
+    burgerButton.classList.remove("menu__burger-btn--active");
+    burgerLine1.classList.remove("burger-btn__line--active");
+    burgerLine2.classList.remove("burger-btn__line--active");
+    burgerLine3.classList.remove("burger-btn__line--active");
+    menuLogoWrapper.classList.remove("menu__logo-block--active");
     logoLink.classList.remove("menu__logo--active");
     logoImg.classList.remove("logo__img--active");
-    searchButton.classList.remove("menu__button--active");
+    searchButton.classList.remove("menu__search-btn--active");
     navigation.classList.remove("menu__navigation--active");
     navigationList.classList.remove("navigation__list--active");
     navItem1.classList.remove("navigation__item--active");
@@ -63,27 +70,30 @@ function toggleBurgerButton() {
     navLink7.classList.remove("navigation__link-btn--active");
     navItem8.classList.remove("navigation__item--active");
     navLink8.classList.remove("navigation__link-btn--active");
-    modBtnWrapper.classList.remove("menu__wrapper--active");
-    callButton.classList.remove("menu__button--active");
-    chatButton.classList.remove("menu__button--active");
-    profileButton.classList.remove("menu__button--active");
+    modBtnWrapper.classList.remove("menu__modal-block--active");
+    callButton.classList.remove("menu__call-btn--active");
+    chatButton.classList.remove("menu__chat-btn--active");
+    profileButton.classList.remove("menu__profile-btn--active");
     mailtoLink.classList.remove("menu__mailto--active");
     calltoLink.classList.remove("menu__callto--active");
-    langWrapper.classList.remove("menu__wrapper--active");
-    langLinkRU.classList.remove("menu__link-btn--active");
-    langLinkEN.classList.remove("menu__link-btn--active");
-    langLinkCH.classList.remove("menu__link-btn--active");
+    langWrapper.classList.remove("menu__lang-block--active");
+    langLink1.classList.remove("menu__lang-link--active");
+    langLink2.classList.remove("menu__lang-link--active");
+    langLink3.classList.remove("menu__lang-link--active");
     menu.classList.remove("menu--active");
     placeholder.classList.remove("placeholder--active");
-    servicesFirstLineWrapper.classList.remove("services__wrapper--hidden");
+    servicesBtnWrapper.classList.remove("services__btns-wrapper--hidden");
     upenderException.classList.remove("upender__exception--blurred");
     upenderBlurOverlay.classList.remove("upender__blur-overlay--active");
   } else {
-    burgerButton.classList.add("menu__button--active");
-    menuLogoWrapper.classList.add("menu__wrapper--active");
+    burgerButton.classList.add("menu__burger-btn--active");
+    burgerLine1.classList.add("burger-btn__line--active");
+    burgerLine2.classList.add("burger-btn__line--active");
+    burgerLine3.classList.add("burger-btn__line--active");
+    menuLogoWrapper.classList.add("menu__logo-block--active");
     logoLink.classList.add("menu__logo--active");
     logoImg.classList.add("logo__img--active");
-    searchButton.classList.add("menu__button--active");
+    searchButton.classList.add("menu__search-btn--active");
     navigation.classList.add("menu__navigation--active");
     navigationList.classList.add("navigation__list--active");
     navItem1.classList.add("navigation__item--active");
@@ -102,19 +112,19 @@ function toggleBurgerButton() {
     navLink7.classList.add("navigation__link-btn--active");
     navItem8.classList.add("navigation__item--active");
     navLink8.classList.add("navigation__link-btn--active");
-    modBtnWrapper.classList.add("menu__wrapper--active");
-    callButton.classList.add("menu__button--active");
-    chatButton.classList.add("menu__button--active");
-    profileButton.classList.add("menu__button--active");
+    modBtnWrapper.classList.add("menu__modal-block--active");
+    callButton.classList.add("menu__call-btn--active");
+    chatButton.classList.add("menu__chat-btn--active");
+    profileButton.classList.add("menu__profile-btn--active");
     mailtoLink.classList.add("menu__mailto--active");
     calltoLink.classList.add("menu__callto--active");
-    langWrapper.classList.add("menu__wrapper--active");
-    langLinkRU.classList.add("menu__link-btn--active");
-    langLinkEN.classList.add("menu__link-btn--active");
-    langLinkCH.classList.add("menu__link-btn--active");
+    langWrapper.classList.add("menu__lang-block--active");
+    langLink1.classList.add("menu__lang-link--active");
+    langLink2.classList.add("menu__lang-link--active");
+    langLink3.classList.add("menu__lang-link--active");
     menu.classList.add("menu--active");
     placeholder.classList.add("placeholder--active");
-    servicesFirstLineWrapper.classList.add("services__wrapper--hidden");
+    servicesBtnWrapper.classList.add("services__btns-wrapper--hidden");
     upenderException.classList.add("upender__exception--blurred");
     upenderBlurOverlay.classList.add("upender__blur-overlay--active");
   }
@@ -129,3 +139,9 @@ upenderBlurOverlay.addEventListener("click", function() {
 
 var burgerButton = document.getElementById("burgerButton");
 burgerButton.addEventListener("click", toggleBurgerButton);
+
+
+
+
+
+
