@@ -175,6 +175,7 @@
   
   .services__content {
       padding-top: 32px;
+      overflow: hidden;
   }
   
   .services__article {
